@@ -2,7 +2,7 @@
 
 https://yadi.sk/d/iuXIMlq1GOnDSg
 
-qtbase
+cd qtbase
 
 mkdir build
 
@@ -14,6 +14,12 @@ make;make install
 
 
 
-qtwebengine            need 15G swap for link
+cd qtwebengine                              need 15G swap for link
 
 mkdir build;cd build;qmake ..;make;make install
+
+dd if=/dev/zero of=swapfile bs=1M count=1000      (1Gb)
+mkswap swapfile
+swapon swapfile
+
+
