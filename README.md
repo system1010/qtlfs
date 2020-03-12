@@ -16,7 +16,7 @@ make;make install
 
 cd qtwebengine                              need 15G swap for link
 
-mkdir build;cd build;qmake ..;make;make install
+mkdir build;cd build;qmake ..;make;make install   (qtdeclarative, qtx11extras)
 
 dd if=/dev/zero of=swapfile bs=1M count=1000      (1Gb)
 mkswap swapfile
