@@ -7,4 +7,5 @@ mkdir build
 
 cd build
 
-../configure
+../configure  --prefix=/opt
+
