@@ -7,5 +7,5 @@ mkdir build
 
 cd build
 
-../configure  --prefix=/opt
+../configure  --prefix=/opt/qt5
 
